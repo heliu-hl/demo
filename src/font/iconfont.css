@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1561703641125'); /* IE9 */
+  src: url('iconfont.eot?t=1561703641125#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPAAAsAAAAAB+AAAANyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDSIMWATYCJAMMCwgABCAFhG0HNxvdBsgOJaFAwQDgQQFIPDx/+Dv3vffXaFrRmJi3fUwKo3wDtTWjLPBANqf9/2szP5DQFOoyNZPTqs8QYsMjw4oLWxe/9Spu1KX6aeCHaWuxuNRSxp8yAQwHKEC949ODPHACEiDPML2kgbr4mkDTpJG4zcUr/cCmcDcF4kxVosFW8SoDg6EuVDtOFohnsKqnIv4W8JR8P36NDxtIKhncnduni+Jg7kePL/9z5v9MYREFuu3CYOfIWAIKcdIZPSZk1SWCprFahjuripC2UrkBEi/X1PE/XiKqgPvbYA7WEh89AgXBx38GEsigijpuAbxB0WiqKG18R79m71HJ+fix/9OngU+eBDx6FB6pC3VDBU0RvsOvvS2pXfEOjiPlhs1NjZ1IGNrHuPSWNTsHUc5B5rZoWTB3DJY2bYOgvPbhFPnw/d68vHVnT2uW2YXUF3eKqwXLy/ZBEcrOkmG4bnd3y6p7E9scedDH2rxXlYWsHZJUvA263XCR8enBvEcS0rlIkpARzM2Iz7jXooA/fE6oBKqIFAiFQpiv5ItQIXbGrSZv8KyyOXO5eKyCXOWNSrPzx5OeNv27K7iUrKt0wuXC7QWXw0e4t4GyMHI4R1P22gd3Np51SR1dc4/LXdGmv1sZt01xh0aiTnQlxOxRtI/sK+ph3tJ2iKJctwWP/jXgVxj+300cbp2fi0cdWf4NsvRvkChKTftu7WuSRHHQrnHL7LqzG+m2sytEAQwy87OcmcRv5/R/+Bv/6dNfZNuZfzbZAvA+4/FzmBlkFpjuV7/DWPDHdBOHimVwfblobaB1YtlWKS0BB5oYgJsc9ma5fWxyP6FurEBSM4GsbopXREuoaFlGVd0KmhYtOd8yQieI0hJYkAcQ+vYi6XpF1nebV0SvUTHuK6r6IaDpMDre2DITqrRAx9EMx6GYJKTGUg/xA0xKB32wYrii9bIhEQdg3asW0LjRY+uNJdiD9S32eOOV8YwRRHTqRovBe9jlokjTqQPHstF2xrTpY8aQLpZGx1I3SDbosGgMFgeJkQRRxaI8SDSekRqf94EpDC7R9AFaoxwA03mp0yPjjDZ2Am+J1TOJ9ipMvOIpxmMYAiF0lBuyGIQxl1elEK17mQMWixnNvqCsmW4MGkWmWkcfb3c/3wloch/MwXMCZ4FyTuOw6LVTIwkDAAAA') format('woff2'),
+  url('iconfont.woff?t=1561703641125') format('woff'),
+  url('iconfont.ttf?t=1561703641125') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1561703641125#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wode:before {
+  content: "\e61a";
+}
+
+.icon-shouye:before {
+  content: "\e6ff";
+}
+

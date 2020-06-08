@@ -1,0 +1,137 @@
+@import "./assets/css/variables/default.styl"
+
+.taro_router, .taro_page {
+  height: 100%;
+}
+
+page {
+  color: #232321;
+  background-color: $backgroundColor; // #f4f1f1
+  font-size: $fontSize;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    border-radius: 0;
+  }
+}
+
+scroll-view {
+  overflow: scroll;
+}
+
+.fix_ipx {
+  bottom: 68px !important;
+}
+
+.filter_ipx {
+  padding-bottom: 68px !important;
+}
+
+.fixed {
+  bottom: 0;
+  /* 在 H5 模式下将会编译成 margin-bottom: 50px，在小程序模式下则会忽略*/
+  margin-bottom: taro-tabbar-height;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.grow-container {
+  flex 1
+  flex-grow 1;
+}
+
+.iphoneX-box{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  flex-shrink 0
+}
+
+.tap-active{
+  background-color: $backgroundColor !important;
+}
+
+
+.error-button-filled {
+  background-color: $errorColor !important;
+  color: #fff
+  border: 1px solid $errorColor !important;
+}
+
+.error-button {
+  background-color: transparent !important;
+  color: $errorColor
+  border: 1px solid $errorColor !important;
+}
+
+.index
+
+  .at-tabs
+    background-color: #fff;
+
+    &__header
+      width: 190px;
+
+    &__item
+      &::after
+        background-color: $themePrimaryColor;
+
+      &--active
+        color: $themePrimaryColor
+
+    &__underline
+      background-color: transparent;
+
+
+
+
+  .at-progress {
+
+    &__outer {
+
+      &-inner {
+
+        &-background {
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &-icon  {
+    font-weight 700;
+    width: $icon-height = 80px;
+    height: $icon-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $themeLightTextColor;
+    font-size: $icon-height * 0.5;
+    cursor: pointer;
+    transition: all 250ms ease;
+    -webkit-app-region: no-drag;
+  }
+
+

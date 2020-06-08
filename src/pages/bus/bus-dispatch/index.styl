@@ -1,0 +1,108 @@
+.root {
+  margin 0
+  padding 0
+  width: 100%;
+  height: 100%
+  background-color white
+  display flex;
+  flex-direction column;
+  overflow: scroll
+}
+
+.item-container {
+  height 100px
+  line-height 100px
+  display flex
+  align-items center
+  border-bottom 1px solid #e1e1e1
+  padding:0 26px
+}
+.descName {
+  color: #333
+  width 180px;
+  font-size 30px;
+  height: 100%
+  overflow hidden
+  //letter-spacing 6px
+}
+.item-container-driver{
+  border-bottom 1px solid #e1e1e1;
+  padding:0 26px;
+}
+.item-container-driver>View{
+  height 70px;
+  line-height 70px;
+  font-size: 30px;
+  color: #333;
+  width 180px;
+}
+.item-container-driver-select{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.descName:after {
+  display: inline-block;
+  content: '';
+  padding-left: 100%;
+}
+.multiple_choice_box_item{
+  width: 29%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+// .multiple_choice_box_item checkbox{
+//    transform: scale(0.8);
+// }
+.picker {
+  flex auto
+  height:100%
+}
+
+.text-with-arrow {
+  width 92%
+  height: 100px
+  line-height: 100px
+  display inline-block
+  background-image url("../../../assets/images/arrow-down.png")
+  background-position right
+  background-repeat no-repeat
+  background-size 26px 16px
+  overflow hidden
+  white-space nowrap
+  text-overflow ellipsis
+  color:#4279E6
+  text-align center
+}
+.switch-container{
+  flex:auto
+  display: flex
+  justify-content: flex-end
+}
+.car_type_list{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin: 20px 26px 0;
+  color: #303030;
+}
+.car_type_list View{
+  padding: 20px 20px;
+  width: 50%;
+  text-align: center;
+  }
+.car_type_item{
+  background: #129fab !important;
+  color: #fff !important;
+}
+.tip_text{
+  font-size: 28rpx;
+  margin: 0 26px;
+  color: rgb(226, 96, 96);
+}
+

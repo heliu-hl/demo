@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/personal_center.css">
+</head>
+
+<body>
+<header id="header">
+    <div class="users_info">
+        <div class="photo">
+            <img src="./images/14.png" alt="">
+        </div>
+        <div class="username">
+            <h2>木木之城</h2>
+            <p>个人中心</p>
+        </div>
+        <div class="RichScan">
+            <img src="./images/13.png" alt="">
+        </div>
+    </div>
+</header>
+
+<div id="modules">
+    <div class="module" _id="yes">
+        <img src="images/1.png" alt="">
+        <p>智能报修</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/2.png" alt="">
+        <p>意见与建议</p>
+    </div>
+    <div class="module styleNone" _id="yes">
+        <img src="images/3.png" alt="">
+        <p>班车查询</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/4.png" alt="">
+        <p>周转房办理</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/5.png" alt="">
+        <p>通知公告</p>
+    </div>
+    <div class="module styleNone" _id="no">
+        <img src="images/6.png" alt="">
+        <p>失物招领</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/7.png" alt="">
+        <p>班车预约</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/8.png" alt="">
+        <p>宿舍查询</p>
+    </div>
+    <div class="module styleNone" _id="no">
+        <img src="images/9.png" alt="">
+        <p>在线选房</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/10.png" alt="">
+        <p>卫生评分</p>
+    </div>
+    <div class="module" _id="no">
+        <img src="images/11.png" alt="">
+        <p>文化建设</p>
+    </div>
+    <div class="module styleNone" _id="time">
+        <img src="images/12.png" alt="">
+        <p>中小学报名</p>
+    </div>
+</div>
+<!-- 背景 -->
+<div class="bg"></div>
+<!-- 提示 -->
+<div class="tip" style="display: none;">
+    <img src="./images/16.svg" alt="">
+    <button id="colse">关闭</button>
+</div>
+<script src='./js/jquery-3.2.1.js'></script>
+<script src='./js/auto-size.js'></script>
+<script src='./js/jweixin-1.4.0.js'></script>
+<script src='./js/wxutils.js'></script>
+<script>
+    // $(function () {
+    //
+    // })
+</script>
+<script>
+    $(function () {
+        $('.module').on('click', function () {
+            var _id = $(this).attr("_id")
+            if (_id == 'yes') {
+                wx.launchMiniProgram({
+                    targetAppId:'wx92e266b01d57457a',
+                    path: 'app/pages/index'
+                })
+            } else if (_id == 'no') {
+                $('.tip').show(100)
+            } else if (_id == 'time') {
+                alert('未到报名时间')
+            }
+        })
+        //关闭提示
+        $('#colse').on('click', function () {
+            $('.tip').hide(100)
+        })
+    })
+</script>
+</body>
+
+</html>

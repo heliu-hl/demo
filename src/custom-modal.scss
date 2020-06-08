@@ -1,0 +1,7 @@
+@mixin absolute-center($pos: absolute) {
+  position: $pos;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@import "~taro-ui/dist/style/mixins/libs/absolute-center.scss";
